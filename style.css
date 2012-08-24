@@ -16,6 +16,10 @@
 	background-color: #d62323;
 }
 
+.bggreen {
+	background-color: #34ab00;
+}
+
 div.containers{
 	min-height: 200px;
 }
@@ -27,7 +31,7 @@ header{
 }
 
 header nav{
-	width: 600px;
+	width: 660px;
 	float: right;
 	min-height: 50px;
 	margin-top: 35px;
@@ -59,9 +63,9 @@ nav menu li{
 }
 
 nav menu li a{
-	font-size: 13px;
-	color: #fff;
-	padding: 15px 25px;
+	font-size: 18px;
+	color: #fafafa;
+	padding: 8px 25px;
 	-webkit-transition: all 500ms;
 	   -moz-transition: all 500ms;
 	    -ms-transition: all 500ms;
@@ -76,4 +80,5 @@ nav menu li a{
 
 .bgred nav menu li a:hover{
 	border-color: #FFF;
+	color: #fff;
 }
