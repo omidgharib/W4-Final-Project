@@ -1,2 +1,79 @@
 .cover{*zoom:1;}.cover:before,.cover:after{content:" ";display:table}.cover:after{clear:both}
 .clear{clear:both;display:block;width:0 !important;height:0 !important;min-height:0 !important;min-width:0 !important;margin:0 !important;padding:0 !important;overflow:hidden}
+
+*{
+	outline: 1px solid #333;
+	font-family: 'yekan';
+}
+
+::selection {
+	background: rgba(92,92,92,0.5);
+	color: #eee;
+	text-shadow: none;
+}
+
+.bgred{
+	background-color: #d62323;
+}
+
+div.containers{
+	min-height: 200px;
+}
+
+header{
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+header nav{
+	width: 600px;
+	float: right;
+	min-height: 50px;
+	margin-top: 35px;
+}
+
+header .logo{
+	width: 260px;
+	display: block;
+	margin-right: auto;
+	min-height: 20px;
+	margin-top: 10px;
+}
+
+header .logo .logoimg{
+	width: 177px;
+	height: 41px;
+	background-image: url('./images/mixd-logo.png');
+}
+
+header .logo h1{
+	font-size: 19px;
+	color: #fff;
+}
+
+/*Navigation Menu*/
+nav menu li{
+	list-style-type: none;
+	float: right;
+}
+
+nav menu li a{
+	font-size: 13px;
+	color: #fff;
+	padding: 15px 25px;
+	-webkit-transition: all 500ms;
+	   -moz-transition: all 500ms;
+	    -ms-transition: all 500ms;
+	     -o-transition: all 500ms;
+	        transition: all 500ms;
+}
+
+.bgred nav menu li a{
+	border-bottom: 2px solid #d62323;
+	text-decoration: none;
+}
+
+.bgred nav menu li a:hover{
+	border-color: #FFF;
+}
