@@ -49,6 +49,7 @@ header .logo{
 	margin-right: auto;
 	min-height: 20px;
 	margin-top: 10px;
+	text-decoration: none;
 }
 
 header .logo .logoimg{
