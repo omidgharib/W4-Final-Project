@@ -162,11 +162,13 @@ footer .info div.social-links a.facebook{
 }
 
 /*Home Page*/
-body#home div.content figure.chair{
+body#home div.content figure.chair,
+body#about div.content figure.chair{
 	margin-top: 30px;
 }
 
-body#home div.content figure.chair figcaption.chair-text{
+body#home div.content figure.chair figcaption.chair-text,
+body#about div.content figure.chair figcaption.chair-text{
 	width: 260px;
 	float: right;
 	padding-right: 10px;
@@ -175,15 +177,39 @@ body#home div.content figure.chair figcaption.chair-text{
 	margin-left: 90px;
 }
 
-body#home div.content figure.chair figcaption.chair-text h1:after{
+body#home div.content figure.chair figcaption.chair-text h1:after,
+body#about div.content figure.chair figcaption.chair-text h1:after{
 	position: absolute;
 	right: 100%;
 	top: 90px;
 	content: url('./images/pointer.svg');
 }
 
-body#home div.content figure.chair img{
+body#home div.content figure.chair img,
+body#about div.content figure.chair img{
 	margin-right: auto;
 	width: 589px;
 	height: 800px;
+}
+
+/*About Page*/
+body#about h2.divide-header{
+	position: relative;
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	background-color: #252525;
+	font-size: 38px;
+	line-height: 90px;
+}
+
+body#about h2.divide-header:after{
+	border-style: solid;
+	border-color: rgb(37, 37, 37) transparent transparent transparent;
+	/*border-color: rgba(37, 37, 37, .8) transparent transparent transparent;*/
+	border-width: 20px;
+	position: absolute;
+	right: 49%;
+	top: 100%;
+	content: "";
 }
