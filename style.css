@@ -30,6 +30,7 @@
 	-webkit-border-radius: 5px;
 	        border-radius: 5px;
 	background-color: #ccc;
+	background-color: rgba(210,210,210,0.8);
 	background-image: url('./images/point-up.png');
 	background-repeat: no-repeat;
 	background-position: 3px 2px;
