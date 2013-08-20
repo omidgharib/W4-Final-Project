@@ -36,6 +36,11 @@ header{
 	padding-top: 20px;
 }
 
+footer{
+	width: 950px;
+	margin: 40px auto;
+}
+
 header nav{
 	width: 680px;
 	float: right;
@@ -43,7 +48,7 @@ header nav{
 	margin-top: 35px;
 }
 
-header .logo{
+.logo{
 	width: 260px;
 	display: block;
 	margin-right: auto;
@@ -52,13 +57,13 @@ header .logo{
 	text-decoration: none;
 }
 
-header .logo .logoimg{
+.logo .logoimg{
 	width: 177px;
 	height: 41px;
 	background-image: url('./images/mixd-logo.png');
 }
 
-header .logo h1{
+.logo h1{
 	font-size: 19px;
 	color: #fff;
 }
@@ -90,10 +95,56 @@ nav menu li a{
 	color: #fff;
 }
 
+/*Footrer*/
+footer .info{
+	float: right;
+	width: 680px;
+}
+
+footer .info div.social-links{
+	float: right;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+footer .info address{
+	margin-right: auto;
+	width: 490px;
+	font-size: 13px;
+	line-height: 25px;
+	font-style: normal;
+}
+
+footer .info address a{
+	color: #FFF;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+
+footer .info div.social-links a{
+	display: block;
+	width: 48px;
+	height: 48px;
+	float: right;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+footer .info div.social-links a.github{
+	background: url('./images/github.png');
+}
+
+footer .info div.social-links a.linkedin{
+	background: url('./images/linkedin.png');
+}
+
+footer .info div.social-links a.facebook{
+	background: url('./images/facebook.png');
+}
 
 /*Home Page*/
 body#home div.content figure.chair{
-	margin-top: 30px;s
+	margin-top: 30px;
 }
 
 body#home div.content figure.chair figcaption.chair-text{
