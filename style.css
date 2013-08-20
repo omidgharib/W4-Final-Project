@@ -213,3 +213,7 @@ body#about h2.divide-header:after{
 	top: 100%;
 	content: "";
 }
+
+body#about div.team div.member{
+	background-color: #F3F3F3;
+}
