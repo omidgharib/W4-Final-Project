@@ -1,0 +1,275 @@
+/*
+Theme Name: Mixd
+Theme URI: http://omidgharib.ir
+Description: Mixd Theme
+Author: Omid Gharib
+Author URI: http://omidgharib.ir
+Version: 0.2.0
+*/
+
+.cover{*zoom:1;}.cover:before,.cover:after{content:" ";display:table}.cover:after{clear:both}
+.clear{clear:both;display:block;width:0 !important;height:0 !important;min-height:0 !important;min-width:0 !important;margin:0 !important;padding:0 !important;overflow:hidden}
+
+*{
+	outline: 1px solid #333;
+	font-family: 'yekan';
+}
+
+::selection {
+	background: rgba(92,92,92,0.5);
+	color: #eee;
+	text-shadow: none;
+}
+
+.bgred{
+	background-color: #d62323;
+	color: #fff;
+}
+
+.bggreen {
+	background-color: #34ab00;
+}
+
+.bgyellow {
+	background-color: #ffde00;
+}
+
+.back-to-top{
+	padding: 20px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	background-color: #ccc;
+	background-color: rgba(210,210,210,0.8);
+	background-image: url('./images/point-up.png');
+	background-repeat: no-repeat;
+	background-position: 3px 2px;
+	cursor: pointer;
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+}
+
+div.containers{
+	
+}
+
+div.container{
+	width: 950px;
+	margin: 0 auto;
+}
+
+header{
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+footer{
+	width: 950px;
+	margin: 40px auto;
+}
+
+header nav{
+	width: 680px;
+	float: right;
+	min-height: 50px;
+	margin-top: 35px;
+}
+
+.logo{
+	width: 260px;
+	display: block;
+	margin-right: auto;
+	min-height: 20px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.logo .logoimg{
+	width: 177px;
+	height: 41px;
+	background-image: url('./images/mixd-logo.png');
+}
+
+.logo h1{
+	font-size: 19px;
+	color: #fff;
+}
+
+/*Navigation Menu*/
+nav menu li{
+	list-style-type: none;
+	float: right;
+}
+
+nav menu li a{
+	font-size: 18px;
+	color: #fafafa;
+	padding: 8px 25px;
+	-webkit-transition: all 500ms;
+	   -moz-transition: all 500ms;
+	    -ms-transition: all 500ms;
+	     -o-transition: all 500ms;
+	        transition: all 500ms;
+}
+
+.bgred nav menu li a{
+	border-bottom: 3px solid #d62323;
+	text-decoration: none;
+}
+
+.bgred nav menu li a:hover{
+	border-color: #FFF;
+	color: #fff;
+}
+
+/*Footrer*/
+footer .info{
+	float: right;
+	width: 680px;
+}
+
+footer .info div.social-links{
+	float: right;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+footer .info address{
+	margin-right: auto;
+	width: 490px;
+	font-size: 13px;
+	line-height: 25px;
+	font-style: normal;
+}
+
+footer .info address a{
+	color: #FFF;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+
+footer .info div.social-links a{
+	display: block;
+	width: 48px;
+	height: 48px;
+	float: right;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+footer .info div.social-links a.github{
+	background: url('./images/github.png');
+}
+
+footer .info div.social-links a.linkedin{
+	background: url('./images/linkedin.png');
+}
+
+footer .info div.social-links a.facebook{
+	background: url('./images/facebook.png');
+}
+
+/*Home Page*/
+body#home div.content figure.chair,
+body#about div.content figure.chair{
+	margin-top: 30px;
+}
+
+body#home div.content figure.chair figcaption.chair-text,
+body#about div.content figure.chair figcaption.chair-text{
+	width: 260px;
+	float: right;
+	padding-right: 10px;
+	position: relative;
+	margin-top: 140px;
+	margin-left: 90px;
+}
+
+body#home div.content figure.chair figcaption.chair-text h1:after,
+body#about div.content figure.chair figcaption.chair-text h1:after{
+	position: absolute;
+	right: 100%;
+	top: 90px;
+	content: url('./images/pointer.svg');
+}
+
+body#home div.content figure.chair img,
+body#about div.content figure.chair img{
+	margin-right: auto;
+	width: 589px;
+	height: 800px;
+}
+
+/*About Page*/
+body#about h2.divide-header{
+	position: relative;
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	background-color: #252525;
+	font-size: 38px;
+	line-height: 90px;
+}
+
+body#about h2.divide-header:after{
+	border-style: solid;
+	border-color: rgb(37, 37, 37) transparent transparent transparent;
+	/*border-color: rgba(37, 37, 37, .8) transparent transparent transparent;*/
+	border-width: 20px;
+	position: absolute;
+	right: 49%;
+	top: 100%;
+	content: "";
+}
+
+body#about div.member{
+	background: -moz-radial-gradient(#eee, #888);
+	background: -ms-radial-gradient(#eee, #888);
+	background: -o-radial-gradient(#eee, #888);
+	background: -webkit-radial-gradient(#eee, #888);
+	background: radial-gradient(#eee, #888);
+}
+
+body#about div.member article{
+	width: 950px;
+	margin: 30px auto;
+}
+
+body#about div.member.odd img{
+	width: 400px;
+	height: 300px;
+	float: right;
+}
+
+body#about div.member.even img{
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+
+body#about div.member.odd .info{
+	width: 500px;
+	margin-right: auto;
+}
+
+body#about div.member.even .info{
+	width: 500px;
+	margin-left: auto;
+}
+
+body#about div.member .info .title{
+	font-size: 30px;
+	line-height: 50px;
+	margin: 0;
+}
+
+body#about div.member .info .role{
+	font-size: 20px;
+	line-height: 30px;
+	color: #d62323;
+}
+
+body#about div.member .info .abstract{
+	
+}
