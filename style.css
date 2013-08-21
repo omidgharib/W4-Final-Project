@@ -214,6 +214,53 @@ body#about h2.divide-header:after{
 	content: "";
 }
 
-body#about div.team div.member{
-	background-color: #F3F3F3;
+body#about div.member{
+	background: -moz-radial-gradient(#eee, #888);
+	background: -ms-radial-gradient(#eee, #888);
+	background: -o-radial-gradient(#eee, #888);
+	background: -webkit-radial-gradient(#eee, #888);
+	background: radial-gradient(#eee, #888);
+}
+
+body#about div.member article{
+	width: 950px;
+	margin: 30px auto;
+}
+
+body#about div.member.odd img{
+	width: 400px;
+	height: 300px;
+	float: right;
+}
+
+body#about div.member.even img{
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+
+body#about div.member.odd .info{
+	width: 500px;
+	margin-right: auto;
+}
+
+body#about div.member.even .info{
+	width: 500px;
+	margin-left: auto;
+}
+
+body#about div.member .info .title{
+	font-size: 30px;
+	line-height: 50px;
+	margin: 0;
+}
+
+body#about div.member .info .role{
+	font-size: 20px;
+	line-height: 30px;
+	color: #d62323;
+}
+
+body#about div.member .info .abstract{
+	
 }
