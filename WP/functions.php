@@ -3,8 +3,8 @@
 function custome_theme_init (){
 
 	add_theme_support('menus');
-	register_nav_menu('mainmenu', "Main Manu");
 	add_theme_support('post-thumbnails');
+	register_nav_menu('mainmenu', "Main Manu");
 	
 	$labels = array(
 	    'name' => _x('Member', 'post type general name'),
@@ -50,7 +50,7 @@ function add_custom_box() {
   if ( isset($_REQUEST['post']) ) {
     $postID = (int)$_REQUEST['post'];
     $role = get_post_meta($postID,'role',true);
-    $role = (float) $role;
+    $role = $role;
   }
 
   echo "<label for='role'>نقش کاری شخص: </label>";
@@ -61,7 +61,7 @@ function add_custom_box() {
 function save_meta($postID) {
   if ( is_admin() ) {
     if ( isset($_POST['role']) ) {
-      $role = (float) $_POST['role'];
+      $role = $_POST['role'];
       update_post_meta($postID,'role', $role);
     }
   }
