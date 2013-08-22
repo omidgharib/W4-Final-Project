@@ -7,6 +7,7 @@
       'before'          => '',
       'after'           => '',
       'link_before'     => '',
-      'link_after'      => ''
+      'link_after'      => '',
+      'items_wrap'      => '<menu id="%1$s" class="%2$s">%3$s</menu>'
     ));
 ?>
