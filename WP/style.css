@@ -97,12 +97,12 @@ header nav{
 }
 
 /*Navigation Menu*/
-nav menu li{
+nav li{
 	list-style-type: none;
 	float: right;
 }
 
-nav menu li a{
+nav li a{
 	font-size: 18px;
 	color: #fafafa;
 	padding: 8px 25px;
@@ -113,12 +113,12 @@ nav menu li a{
 	        transition: all 500ms;
 }
 
-.bgred nav menu li a{
+.bgred nav li a{
 	border-bottom: 3px solid #d62323;
 	text-decoration: none;
 }
 
-.bgred nav menu li a:hover{
+.bgred nav li a:hover{
 	border-color: #FFF;
 	color: #fff;
 }
