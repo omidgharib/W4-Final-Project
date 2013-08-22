@@ -69,3 +69,21 @@ function save_meta($postID) {
 
 add_action('save_post','save_meta');
 add_action('add_meta_boxes', 'add_custom_box');
+
+function welcome_notice() {
+  global $current_user;
+  if ( !get_user_meta($current_user->ID, 'notice_ignored',true) ) {
+    echo '<div class="updated"><p>';
+    printf(__('<h2>تشکر فراوان از خرید این تم. </h2><a href="%1$s" class="remove_message">این پیغم را حذفکنید</a>'), '?welcome_notice_ignore=1');
+    echo '</p></div>';
+  }
+}
+add_action('admin_notices', 'welcome_notice');
+
+function welcome_notice_ignore() {
+  global $current_user;
+  if ( isset($_GET['welcome_notice_ignore']) ) {
+    update_user_meta($current_user->ID, 'notice_ignored', (int)$_GET['welcome_notice_ignore']);
+  }
+}
+add_action('admin_init', 'welcome_notice_ignore');
