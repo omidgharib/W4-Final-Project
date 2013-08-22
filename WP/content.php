@@ -29,15 +29,15 @@
   if($query->have_posts()){
     while($query->have_posts()){
       $query->the_post();
-      // echo '<h1>'.get_the_title().'</h1>';
-      // the_content();
+      $meta = get_post_custom();
+      $role = $meta["role"] != "" ? $meta["role"][0] : "";
  ?>
 <div class="containers member cover <?php echo $ClassName; ?> ">
   <article class="cover">
     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="">
     <div class="info">
       <h3 class="title"><?php echo get_the_title(); ?></h3><br />
-      <span class="role">لورم ایپسوم</span><br />
+      <span class="role"><?php echo $role; ?></span><br />
       <p class="abastract">
         <?php the_content(); ?>
       </p>
