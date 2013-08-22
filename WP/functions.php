@@ -41,3 +41,31 @@ function custome_theme_init (){
 }
 
 add_action('init', 'custome_theme_init');
+
+function add_custom_box() {
+  add_meta_box('Roleid', 'role', 'role_box', 'Member','side');
+
+  function role_box() {
+  $role = "";
+  if ( isset($_REQUEST['post']) ) {
+    $postID = (int)$_REQUEST['post'];
+    $role = get_post_meta($postID,'role',true);
+    $role = (float) $role;
+  }
+
+  echo "<label for='role'>نقش کاری شخص: </label>";
+  echo "<input id='role' title='role' class='widefat' name='role' size='20' type='text' value='$role'>";
+  }
+}
+
+function save_meta($postID) {
+  if ( is_admin() ) {
+    if ( isset($_POST['role']) ) {
+      $role = (float) $_POST['role'];
+      update_post_meta($postID,'role', $role);
+    }
+  }
+}
+
+add_action('save_post','save_meta');
+add_action('add_meta_boxes', 'add_custom_box');
