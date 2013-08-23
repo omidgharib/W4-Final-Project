@@ -17,12 +17,16 @@
 	color: #fff;
 }
 
-.bggreen {
+.bggreen{
 	background-color: #34ab00;
 }
 
-.bgyellow {
+.bgyellow{
 	background-color: #ffde00;
+}
+
+.bggrey{
+	background-color: #F3F3F3;
 }
 
 .back-to-top{
