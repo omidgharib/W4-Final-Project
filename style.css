@@ -108,12 +108,14 @@ nav menu li a{
 	        transition: all 500ms;
 }
 
-.bgred nav menu li a{
-	border-bottom: 3px solid #d62323;
+nav menu li a{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
 	text-decoration: none;
 }
 
-.bgred nav menu li a:hover{
+nav menu li a:hover{
 	border-color: #FFF;
 	color: #fff;
 }
