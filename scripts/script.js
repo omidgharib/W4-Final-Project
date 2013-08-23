@@ -6,4 +6,19 @@ $(function(){
 	backToTop.click(function(){
 		$("html, body").animate({ scrollTop: 0 }, 800); 
 	});
+
+	var scrollorama = $.scrollorama({
+        blocks:'.scrollblock',
+        enablePin:false
+    });
+
+	console.log(1);
+    scrollorama.animate('#member',{
+    	duration: 400, 
+    	property: 'opacity',
+    	start: 0,
+    	end: 1
+	});
+	console.log(2);
+
 });
