@@ -8,11 +8,18 @@ $(function(){
 	});
 
 	var scrollorama = $.scrollorama({
-        blocks:'.scrollblock',
-        enablePin:false
+        blocks: '.scrollblock',
+        enablePin: false
     });
 
 	console.log(1);
+
+	scrollorama.animate('#example1',{
+   		duration:400, property:'opacity'
+	})
+
+	console.log(1.5);
+
     scrollorama.animate('#member',{
     	duration: 400, 
     	property: 'opacity',

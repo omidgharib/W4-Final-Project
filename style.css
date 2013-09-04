@@ -282,7 +282,7 @@ body#blog .blog-posts .post{
 	float: right;
 	width: 220px;
 	margin-right: 15px;
-	margin-top: 20px;
+	margin-top: 30px;
 	background-color: #fefefe;
 	padding-bottom: 20px;
 }
@@ -291,9 +291,9 @@ body#blog .featurepost{
 	float: right;
 	width: 690px;
 	margin-right: 15px;
-	margin-top: 20px;
+	margin-top: 40px;
 	background-color: #fefefe;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 body#blog .blog-posts .post img{
@@ -303,12 +303,12 @@ body#blog .blog-posts .post img{
 
 body#blog .blog-posts .post h2{
 	font-size: 13px;
-	line-height: 20px;
+	line-height: 30px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: block;
 	white-space: nowrap;
-	padding: 0 5px 0 10px;
+	padding: 0 5px 15px 10px;
 }
 
 body#blog .blog-posts .post time{
@@ -317,7 +317,7 @@ body#blog .blog-posts .post time{
 
 body#blog .blog-posts .featurepost img{
 	width: 690px;
-	height: 518px;
+	height: 480px;
 }
 
 body#blog .blog-posts .featurepost h2{
@@ -332,4 +332,14 @@ body#blog .blog-posts .featurepost h2{
 
 body#blog .blog-posts .featurepost time{
 	
+}
+
+body#blog .blog-posts .featurepost a,
+body#blog .blog-posts .post a{
+	width: 32px;
+	height: 32px;
+	background: url('./images/Button-Next-icon.png') no-repeat;
+	display: block;
+	float: left;
+	margin-left: 14px;
 }
